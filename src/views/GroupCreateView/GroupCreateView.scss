@@ -1,0 +1,42 @@
+$beige: #DDC3A5;
+$black-brown: #201E20;
+$tan: #E0A96D;
+
+
+.groups-create-view{
+    width: 100%;
+    height: 500px;
+    margin-top: 140px;
+    box-sizing: border-box;
+
+    background: $beige;
+    border: 3px solid $black-brown;
+
+    .create-group-form{
+        height: 150px;
+        margin: auto;
+        border: none;
+        gap: 20px;
+    }
+
+    .password-holder{
+        display: block;
+    }
+
+    .create-group-button{
+        width: 60px;
+        height: 35px;
+        border: 2px solid $black-brown;
+        border-radius: 5px;
+        background: $tan;
+    }
+
+    .create-group-button:hover{
+        color: aliceblue;
+        border: 2px solid aliceblue;
+        background: $black-brown;
+        cursor: pointer;
+    }
+
+
+}

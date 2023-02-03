@@ -1,0 +1,68 @@
+$beige: #DDC3A5;
+$black-brown: #201E20;
+$tan: #E0A96D;
+
+.login-view {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $tan;
+    padding: 110px;
+}
+
+.form-container {
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 30px;
+    gap: 50px;
+
+    border: 3px solid $black-brown;
+    background-color: $beige;
+}
+
+.login-input {
+    width: 90%;
+    height: 20%;
+    border: 1px solid $black-brown;
+}
+
+.login-submit {
+    width: 30%;
+    height: 12.5%;
+    background-color: $black-brown;
+    color: aliceblue;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-submit:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.password-reset-button {
+    text-decoration: underline;
+}
+
+.password-reset-button:hover { 
+    color: red;
+    cursor: pointer;
+}
+
+.reset-password-form {
+    height: 100%;
+    width: 100%
+}

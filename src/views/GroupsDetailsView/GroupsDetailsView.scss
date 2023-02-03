@@ -1,0 +1,122 @@
+$beige: #DDC3A5;
+$black-brown: #201E20;
+$tan: #E0A96D;
+
+.groups-details-view{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    box-sizing: border-box;
+    padding: 40px 40px;
+    margin-top: 140px;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+
+    background: $beige;
+    border: 3px solid $black-brown;
+
+   
+
+    .groups-list-container{
+        height: 450px;
+
+        .groups-list-management{
+            display: grid;
+            grid-template-columns: 60% 20% 20%;
+            text-align: center;
+            align-items: center;
+
+            .email-field{
+                height: 20px;
+                width: 90%;
+                border-radius: 4px;
+            }
+
+            .checkbox-editor{
+                width: 20px;
+                height: 20px;
+            }
+
+
+
+            button{
+                width: 80%;
+                height: 35px;
+                border: 2px solid $black-brown;
+                border-radius: 5px;
+                background: $tan;
+            }
+
+            button:hover{
+                color: aliceblue;
+                border: 2px solid aliceblue;
+                background: $black-brown;
+                cursor: pointer;
+            }
+        }
+
+
+        .delete-group-button{
+            text-decoration: underline;
+            width: 30px;
+        }
+        .delete-group-button:hover{
+            color: aliceblue;
+            cursor: pointer;
+        }
+    }
+
+    .repeated-list{
+        width: 100%;
+        height: 400px;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        overflow-y:auto;
+       
+
+        .group-container, .log-container{
+            height: 60px;
+            margin: 2px;
+            padding: 2px;
+            border: 2px solid $tan;
+        }
+        
+        .group-info, .log-info{
+            display: grid;
+            grid-template-columns: 60% 40%;
+            align-items: center;
+            p{
+                margin: 5px;
+                display: inline;
+            }
+        }
+
+        .group-container{
+            height: 30px;
+        }
+        
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: $tan;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: #555;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: $black-brown;
+    }
+
+    .logs-container{
+        height: 450px;
+    }
+    
+}
